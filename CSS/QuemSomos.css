@@ -1,7 +1,7 @@
 @import url(Base.css);
 
 ul {
-    margin: 0 10vw;
+    margin: 0 5vw;
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -12,6 +12,7 @@ ul {
 li {
     display: flex;
     flex-direction: column;
+    justify-items: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
