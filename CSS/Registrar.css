@@ -1,0 +1,16 @@
+@import url(./Login.css);
+
+.parte-registrar {
+    padding-top: 20px;
+}
+
+@media(max-width: 500px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+     button {
+        font-size: 0.9rem;
+    }
+}
