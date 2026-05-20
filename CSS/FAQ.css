@@ -1,1 +1,68 @@
 @import url(Base.css);
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perguntas{
+    padding-top: 2.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+.respostas {
+    display: none;
+    padding-top: 1%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding-bottom: 5%;
+}
+
+@media(max-width: 500px) {
+
+    ul{
+        padding-left: 2%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .perguntas {
+        font-size: 1.5rem;
+        padding-top: 20%;
+        text-align: center;
+    }
+
+    .respostas {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media(min-width: 1600px) {
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .perguntas {
+        font-size: 3rem;
+    }
+
+    .respostas {
+        font-size: 2rem;
+    }
+}
