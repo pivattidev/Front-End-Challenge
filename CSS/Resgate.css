@@ -1,5 +1,12 @@
 @import url(Base.css);
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .resgate-container {
     width: 85%;
     max-width: 1100px;
@@ -103,6 +110,23 @@
 
 .status {
     font-weight: 600;
+}
+
+.botao-voltar {
+    font-size: 1.5rem;
+    display: flex;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(69, 113, 255);
+    min-width: 10%;
+    max-width: 40vw;
+    padding: 0 10px;
+    min-height: 4vh;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vh 0;
+    text-align: center;
 }
 
 @media(max-width: 600px) {
