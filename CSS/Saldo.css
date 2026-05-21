@@ -27,7 +27,7 @@
     background-color:rgb(69,113,255);
     border-radius: 25px;
     padding: 35px;
-    collor: #fff;
+    color: #fff;
     text-align: center;
     margin: 0 auto 40px auto;
     max-width: 650px;
@@ -93,6 +93,11 @@
 }
 
 @media (max-width: 600px) {
+
+    .nav-itens {
+        max-width: 16vw;
+    }
+
     .saldo-container h2{
         width: 90%;
     }
@@ -123,12 +128,12 @@
     }
 
     .saldo-card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s;
-}
+        transform: translateY(-5px);
+        transition: 0.3s;
+    }
 
-.botao-resgate:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
+    .botao-resgate:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
 }
