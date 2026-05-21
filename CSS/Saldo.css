@@ -1,0 +1,103 @@
+@import url(base.css);
+
+.saldo-section {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    Color: #1f2937
+}
+
+.saldo-container {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(69,113,255);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.saldo-cards {
+    background-color:rgb(69,113,255);
+    border-radius: 25px;
+    padding: 35px;
+    collor: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.saldo-cards h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.pontos {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.credito {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.botao-resgatar {
+    display: inline-block;
+    background-color: #fff;
+    color: rgb(69,113,255);
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.histoico{
+    background-color: #f3f4f6;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.historico h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: rgb(69,113,255);
+}
+
+.historico-item {
+    Display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.1rem;
+}
+
+.historico-item strong {
+    color: rgb(69,113,255);
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .saldo-container h2{
+        font-size: 2rem;
+    }
+
+    .pontos {
+        font-size: 2.5rem;
+    }
+
+    .historico-item {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
