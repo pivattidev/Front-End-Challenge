@@ -10,7 +10,7 @@
 .sobre-container h2 {
     font-size: 3rem;
     font-weight: 600;
-    color: rgb(69, 113, 255);
+    color: rgb(93, 129, 247);
     margin-bottom: 20px;
     text-align: center;
 }
@@ -21,3 +21,32 @@
     margin-bottom: 20px;
     text-align: justify;
 }
+
+.sobre-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.sobre-card article {
+    background-color: rgb(69, 113, 255);
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sobre-card article h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.sobre-card article p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
