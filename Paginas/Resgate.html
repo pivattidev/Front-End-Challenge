@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Resgate.css">
+    <title>Pass Up - Resgate</title>
+</head>
+<body>
+    <header>
+        <h1> Resgate </h1>
+        <nav>
+            <ul class="navbr">
+                <li><a class="nav-itens" href="../index.html">Home</a></li>
+                <li><a class="nav-itens" href="./sobre.html">Sobre</a></li>
+                <li><a class="nav-itens" href="./contato.html">Contato</a></li>
+                <li><a class="nav-itens" href="./saldo.html">Saldo</a></li>
+                <li><a class="nav-itens" href="./FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section class="resgate-container">
+            <h2>Resgate Creditos</h2>
+            <p class="descricao">Converta seus pontos acumulados em créditos para transporte público.</p>
+
+        <main>
+            <section class="resgate-card">
+                <h3>Saldo disponivel</h3>
+                <p class="pontos">1500 pontos</p>
+                <p class="converesao">100 pontos = R$ 1,00</p>
+
+                <form class="form-resgate">
+                    <label for="pontos">Quantidade de pontos para resgate:</label>
+                    <input type="number" id="pontos" name="pontos" placeholder="Ex: 500">
+
+                    <label for="quantidade">Cartão de transporte:</label>
+                    <input type="text" id="cartao" name="cartao" placeholder="Ex: Bilhete Único">
+
+                    <button type="submit">Confirmar Resgate</button>
+                </form>
+            </section>
+
+                <section class="token-card"> 
+                    <h3>Token de validação</h3>
+                    <p class="pontos">Após a confirmação, sera gerado um token temporario para validação
+                    de credito no transporte publico. O token é valido por 24 horas e pode ser utilizado em qualquer
+                    </p>
+                    <div class="token-info">TKN-2026-PASSUP </div>
+                    <p class="status">Status: aguardando confirmação</p>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Pass Up. Todos os direitos reservados.</p>
+        </footer> 
+</body>
+</html>
