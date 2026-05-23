@@ -11,23 +11,23 @@ btnRegistrar.addEventListener('click', function () {
   const numero = inputNumero.value.trim();
  
   if (!nome || !senha || !email || !numero) {
-    mostrarToast('⚠️ Preencha todos os campos!', 'erro');
+    mostrarToast('Preencha todos os campos!', 'erro');
     return;
   }
   if (senha.length < 6) {
-    mostrarToast('⚠️ A senha precisa ter pelo menos 6 caracteres!', 'erro');
+    mostrarToast('A senha precisa ter pelo menos 6 caracteres!', 'erro');
     return;
   }
   const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   if (!emailValido) {
-    mostrarToast('⚠️ Digite um e-mail válido!', 'erro');
+    mostrarToast('Digite um e-mail válido!', 'erro');
     return;
   }
  
   const usuarios = JSON.parse(localStorage.getItem('passup_usuarios')) || [];
   const jaExiste = usuarios.some(u => u.email === email);
   if (jaExiste) {
-    mostrarToast('⚠️ Esse e-mail já está cadastrado!', 'erro');
+    mostrarToast('Esse e-mail já está cadastrado!', 'erro');
     return;
   }
  
