@@ -2,18 +2,18 @@
 
 .saldo-section {
     width: 85%;
-    max-width: 1100px;
-    margin: 50px auto;
-    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    Color: #1f2937
+    max-width: 700px;
+    margin: 50px auto 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2937;
+    text-align: center;
 }
 
-.saldo-container {
-    font-size: 3rem;
+.saldo-section h2 {
+    font-size: 2rem;
     font-weight: 600;
-    color: rgb(69,113,255);
-    text-align: center;
-    margin-bottom: 15px;
+    color: rgb(69, 113, 255);
+    margin-bottom: 10px;
 }
 
 .descricao {
@@ -23,19 +23,17 @@
     margin-bottom: 30px;
 }
 
-.saldo-cards {
-    background-color:rgb(69,113,255);
+.saldo-card {
+    background-color: rgb(69, 113, 255);
     border-radius: 25px;
     padding: 35px;
     color: #fff;
     text-align: center;
     margin: 0 auto 40px auto;
-    max-width: 650px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-
-.saldo-cards h3 {
+.saldo-card h3 {
     font-size: 2rem;
     font-weight: 600;
 }
@@ -54,69 +52,72 @@
 .botao-resgatar {
     display: inline-block;
     background-color: #fff;
-    color: rgb(69,113,255);
+    color: rgb(69, 113, 255);
     padding: 15px 30px;
     border-radius: 30px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
+    transition: opacity 0.2s;
 }
 
-.histoico{
-    background-color: #f3f4f6;
+.botao-resgatar:hover {
+    opacity: 0.85;
+}
+
+.historico {
+    background-color: #f0f4ff;
     border-radius: 20px;
     padding: 25px;
     max-width: 700px;
-    margin: 0 auto;
+    width: 85%;
+    margin: 0 auto 50px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .historico h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: rgb(69,113,255);
+    color: rgb(69, 113, 255);
     text-align: center;
 }
 
 .historico-item {
-    Display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #dce6ff;
     font-size: 1.1rem;
 }
 
+.historico-item:last-child {
+    border-bottom: none;
+}
+
 .historico-item strong {
-    color: rgb(69,113,255);
+    color: rgb(69, 113, 255);
     font-weight: 700;
 }
 
 @media (max-width: 600px) {
-
     .nav-itens {
         max-width: 16vw;
     }
 
-    .saldo-container h2{
-        width: 90%;
-    }
-
-    .saldo-container {
-        font-size: 2rem;
+    .saldo-section h2 {
+        font-size: 1.5rem;
     }
 
     .pontos {
         font-size: 2.5rem;
     }
 
-    .saldo-cards {
+    .saldo-card {
         padding: 25px;
     }
 
-}
-
-@media (max-width: 400px) {
     .historico-item {
         flex-direction: column;
         gap: 10px;
@@ -125,15 +126,6 @@
 
     .botao-resgatar {
         width: 100%;
-    }
-
-    .saldo-card:hover {
-        transform: translateY(-5px);
-        transition: 0.3s;
-    }
-
-    .botao-resgate:hover {
-        transform: scale(1.05);
-        transition: 0.3s;
+        text-align: center;
     }
 }
