@@ -1,166 +1,199 @@
 @import url(Base.css);
 
 main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resgate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resgate-container h2 {
+    font-size: 3.5rem;
+    color: rgb(69, 113, 255);
+}
+
+
+.descrao{
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+.resgate-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.resgate-container {
-    width: 85%;
-    max-width: 1100px;
-    margin: 50px auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #1f2937;
-}
-
-.resgate-container h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    color: rgb(69, 113, 255);
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.descricao {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.resgate-card,
-.token-card {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 5%;
     background-color: rgb(69, 113, 255);
     color: #ffffff;
     border-radius: 25px;
-    padding: 35px;
-    margin: 0 auto 30px auto;
-    max-width: 750px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
 
-.resgate-card h3,
-.token-card h3 {
+label {
+    font-size: 1.2rem;
+}
+
+
+input{
+    height: 4vh;
+    width: 100%;
+    border: none;
+    border-radius: 13px;
+}
+
+.saldo-titulo {
     font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: center;
 }
 
 .pontos {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 15px 0;
+    font-size: 2.5rem;
 }
 
-.conversao {
-    text-align: center;
-    margin-bottom: 25px;
+.conversao{
+    margin-bottom: 2%;
 }
 
 .form-resgate {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;;
 }
 
-.form-resgate label {
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.form-resgate input {
-    height: 45px;
+button{
+    border-radius: 10px;
     border: none;
-    border-radius: 12px;
-    padding: 0 15px;
-    font-size: 1rem;
-}
-
-.form-resgate button {
-    height: 50px;
-    border: none;
-    border-radius: 14px;
+    margin-bottom: 3%;
+    width: 80%;
+    height: fit-content;
     background-color: #ffffff;
     color: rgb(69, 113, 255);
-    font-size: 1.2rem;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.token-card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: center;
-}
-
-.token-info {
-    background-color: #ffffff;
-    color: rgb(69, 113, 255);
-    padding: 18px;
-    border-radius: 15px;
-    margin: 20px auto;
-    text-align: center;
     font-size: 1.5rem;
-    font-weight: 700;
-    max-width: 350px;
 }
 
-.status {
-    font-weight: 600;
+.token-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+    background-color: rgb(69, 113, 255);
+    color: #ffffff;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.token-titulo {
+    font-size: 1.8rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.token-info{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(69, 113, 255);
+    width: 50%;
+    height: fit-content;
+    font-size: 2rem;
+    border-radius: 10px;
 }
 
 .botao-voltar {
-    font-size: 1.5rem;
+    margin: 4% 0;
     display: flex;
-    border-radius: 20px;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: rgb(69, 113, 255);
-    min-width: 10%;
-    max-width: 40vw;
-    padding: 0 10px;
-    min-height: 4vh;
-    align-items: center;
     justify-content: center;
-    margin: 1.5vh 0;
-    text-align: center;
+    align-items: center;
+    background-color: rgb(69, 113, 255);
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+    width: 30%;
+    height: 5vh;
+    margin-left: 35%;
+    border-radius: 20px;
 }
 
-@media(max-width: 600px) {
+@media (max-width: 768px) {
 
-    .nav-itens {
+    .na-itens {
         max-width: 16vw;
     }
 
-    .resgate-container {
-        width: 90%;
+    .resgate-container  {
+        text-align: center;
+        margin-bottom: 10%;
     }
 
-    .resgate-container h2 {
-        font-size: 2.3rem;
+    .resgate-card {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .botao-voltar {
+        height: 7vh;
+    }
+
+    .resgate-creditos {
+        font-size: 6rem;
+    }
+
+    .descricaoo {
+        font-size: 3rem;
+    }
+
+    label {
+        font-size: 2.5rem;
+    }
+
+    .saldo-titulo {
+        font-size: 4rem;
     }
 
     .pontos {
-        font-size: 2.2rem;
+        font-size: 5rem;
     }
 
-    .resgate-card,
-    .token-card {
-        padding: 25px;
+    .conversao {
+        font-size: 2rem;
     }
 
-    .resgate-card:hover,
-    .token-card:hover {
-        transform: translateY(-5px);
-        transition: 0.3s;
+    .button {
+        font-size: 3rem;
     }
 
-    .form-resgate button:hover {
-        transform: scale(1.03);
-        transition: 0.3s;
-        cursor: pointer;
+    .token-titulo {
+        font-size: 4rem;
+    }
+
+    .token-info {
+        font-size: 4rem;
+    }
+
+    .botao-voltar {
+        font-size: 3rem;
+    }
+
+    .texto-token-card {
+        font-size: 2rem;
     }
 }

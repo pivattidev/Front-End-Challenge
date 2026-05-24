@@ -69,10 +69,20 @@ footer {
 
 @media(max-width: 500px) {
 
+    .navbar{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 8px 5px;
+    }
+
     .nav-itens {
-        max-width: 20vw;
-        font-size: 0.8rem;
-        min-height: 35px;
+        max-width: none;
+        min-width: auto;
+        font-size: 0.75rem;
+        min-height: 32px;
+        padding: 0 10px;
+        margin: 4px 0;
     }
 
     h1 {
