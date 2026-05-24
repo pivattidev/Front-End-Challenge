@@ -3,7 +3,6 @@ const tokenCard = document.querySelector('.token-card');
 const tokenInfo = document.querySelector('.token-info');
 const tokenStatus = document.querySelector('.token-status');
 
-// Oculta a seção de token ao carregar a página
 tokenCard.style.display = 'none';
 
 function gerarToken() {
@@ -36,24 +35,19 @@ formulario.addEventListener('submit', function(event) {
     const tokenGerado = gerarToken();
     const creditos = (parseInt(pontos) / 100).toFixed(2);
 
-    // Atualiza o token e o status na tela
     tokenInfo.textContent = tokenGerado;
     tokenStatus.textContent = `Status: ativo — R$ ${creditos} creditados em "${cartao}"`;
 
-    // Exibe a seção do token com animação
     tokenCard.style.display = 'flex';
     tokenCard.classList.add('token-visivel');
 
-    // Scroll suave até o token
     tokenCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-    // Inicia contagem regressiva de 24h (exibida em segundos para demo)
     iniciarContagem();
 });
 
 function iniciarContagem() {
     const expiracao = document.querySelector('.token-expiracao');
-    // 24 horas em milissegundos
     let tempoRestante = 24 * 60 * 60;
 
     function atualizar() {

@@ -8,11 +8,9 @@ formulario.addEventListener('submit', function (event) {
     const email = document.getElementById('email').value.trim();
     const mensagem = document.getElementById('mensagem').value.trim();
 
-    // Remove aviso anterior se existir
     const avisoExistente = document.querySelector('.aviso-erro');
     if (avisoExistente) avisoExistente.remove();
 
-    // Validação simples
     if (!nome || !email || !mensagem) {
         mostrarAviso('Por favor, preencha todos os campos.', 'erro');
         return;
@@ -24,12 +22,10 @@ formulario.addEventListener('submit', function (event) {
         return;
     }
 
-    // Simula envio com loading no botão
     btnEnviar.disabled = true;
     btnEnviar.textContent = 'Enviando...';
 
     setTimeout(() => {
-        // Esconde o formulário e mostra mensagem de sucesso
         formulario.innerHTML = `
             <div class="sucesso-container">
                 <div class="sucesso-icone">✓</div>
