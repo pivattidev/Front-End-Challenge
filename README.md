@@ -55,49 +55,49 @@ O projeto busca unir tecnologia, mobilidade urbana e impacto social, oferecendo 
 ### 🏠 Home
 > Página inicial do Pass Up. Apresenta o nome da plataforma, navegação principal e um botão de acesso direto para o login. O fundo com imagem de ônibus reforça o contexto do projeto.
 
-![Home](./screenshot-home.png)
+![Home](./Imagens/screenshot-home.png)
 
 ---
 
 ### 📖 Sobre
 > Explica a proposta do projeto com textos sobre missão, visão e valores, organizados em cards azuis. É a página mais informativa do site.
 
-![Sobre](./screenshot-sobre.png)
+![Sobre](./Imagens/screenshot-sobre.png)
 
 ---
 
 ### 👥 Quem Somos?
 > Apresenta cada integrante da equipe com foto, nome, RM e links para GitHub e LinkedIn.
 
-![Quem Somos](./screenshot-quemsomos.png)
+![Quem Somos](./Imagens/screenshot-quemsomos.png)
 
 ---
 
 ### ❓ FAQ
 > Página de perguntas frequentes com accordion interativo — o usuário clica na pergunta e a resposta aparece ou some. Feito com JavaScript puro.
 
-![FAQ](./screenshot-faq.png)
+![FAQ](./Imagens/screenshot-faq.png)
 
 ---
 
 ### 📬 Contato
 > Lista os canais oficiais de contato da plataforma (e-mail, Instagram, Facebook, LinkedIn) e disponibiliza um formulário com validação de campos e feedback visual ao enviar.
 
-![Contato](./screenshot-contato.png)
+![Contato](./Imagens/screenshot-contato.png)
 
 ---
 
 ### 💰 Saldo
 > Exibe o saldo atual do usuário em pontos e o equivalente aproximado em reais (100 pontos = R$ 1,00). Também mostra o histórico de ações que geraram pontos, como assistir anúncios e indicar amigos.
 
-![Saldo](./screenshot-saldo.png)
+![Saldo](./Imagens/screenshot-saldo.png)
 
 ---
 
 ### 🎟️ Resgate
 > Permite ao usuário informar a quantidade de pontos a resgatar e o cartão de transporte. Após a confirmação, um **token temporário único** é gerado automaticamente via JavaScript, válido por 24 horas, para ser usado em pontos de venda ou aplicativos parceiros.
 
-![Resgate](./screenshot-resgate.png)
+![Resgate](./Imagens/screenshot-resgate.png)
 
 ---
 
@@ -186,7 +186,7 @@ git clone https://github.com/seu-usuario/pass-up.git
 ## 📁 Estrutura de Pastas
 
 ```
-Pass-Up/
+Front-End-Challenge/
 ├── index.html                  # Página inicial (Home)
 ├── CSS/
 │   ├── Base.css                # Estilos globais: header, footer e navbar
@@ -197,8 +197,9 @@ Pass-Up/
 │   ├── Registrar.css
 │   ├── Resgate.css
 │   ├── Saldo.css
-│   └── Sobre.css
-├── Pages/
+│   ├── Sobre.css
+│   └── style.css
+├── Paginas/
 │   ├── Contato.html
 │   ├── FAQ.html
 │   ├── Login.html
@@ -207,16 +208,26 @@ Pass-Up/
 │   ├── Resgate.html
 │   ├── Saldo.html
 │   └── Sobre.html
-├── JS/
+├── JavaScript/
 │   ├── Contato.js              # Validação e feedback do formulário de contato
 │   ├── FAQ.js                  # Accordion interativo de perguntas e respostas
-│   └── Resgate.js              # Geração de token e lógica de resgate de pontos
+│   ├── Resgate.js              # Geração de token e lógica de resgate de pontos
+│   ├── Login.js                # Sistema de login
+│   └── Registrar.js            # Sistema de registro
 └── Imagens/
     ├── kaua.png
     ├── guilherme.png
     ├── jardim.png
     ├── pivatti.png
-    └── luiz.png
+    ├── luiz.png
+    ├── onibus3.png
+    ├── screenshot-contato.png
+    ├── screenshot-faq.png
+    ├── screenshot-home.png
+    ├── screenshot-quemsomos.png
+    ├── screenshot-resgate.png
+    ├── screenshot-saldo.png
+    ├── screenshot-sobre.png
 ```
 
 ---
@@ -225,13 +236,13 @@ Pass-Up/
 
 Projeto desenvolvido por alunos do curso de **Front End Design Engineering** — turma **1TDSPF** da **FIAP**.
 
-| Nome | RM | Contribuição |
-|:---|:---:|:---|
-| **Luiz Eduardo Vieira Maciel** | RM573713 | Base do projeto e liderança técnica do grupo |
-| **Alexandre Salcines Messias Pivatti** | RM572657 | Página de Login, ajustes gerais e revisão final |
-| **Kaua Silva de Jesus** | RM573022 | Base do projeto e primeiras páginas |
-| **Gustavo Henrique Jardim de Sá** | RM572437 | FAQ, página de Registro e página de Contato |
-| **Guilherme Boerato Medina** | RM570686 | Respostas do FAQ (Perguntas Frequentes) |
+| Foto | Nome | RM | Contribuição |
+|:---:|:---|:---:|:---|
+| <img src="./Imagens/luiz.png" width="70"> | **Luiz Eduardo Vieira Maciel** | RM573713 | Base do projeto e liderança técnica do grupo |
+| <img src="./Imagens/pivatti.png" width="70"> | **Alexandre Salcines Messias Pivatti** | RM572657 | Página de Login, ajustes gerais e revisão final |
+| <img src="./Imagens/kaua.png" width="70"> | **Kaua Silva de Jesus** | RM573022 | Base do projeto e primeiras páginas |
+| <img src="./Imagens/jardim.png" width="70"> | **Gustavo Henrique Jardim de Sá** | RM572437 | FAQ, página de Registro e página de Contato |
+| <img src="./Imagens/guilherme.png" width="70"> | **Guilherme Boerato Medina** | RM570686 | Respostas do FAQ (Perguntas Frequentes) |
 
 ---
 
