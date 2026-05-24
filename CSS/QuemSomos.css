@@ -1,70 +1,104 @@
 @import url(Base.css);
 
-.lista-integrantes {
-    margin: 0 5vw;
-    height: 60vh;
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 5%;
+    padding: 2rem 1rem 4rem;
+    gap: 1.5rem;
 }
 
-li {
+.secao-titulo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(69, 113, 255);
+    text-align: center;
+    margin: 0;
+}
+
+.secao-descricao {
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+    margin: 0;
+}
+
+.lista-integrantes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.card-integrante {
+    background-color: rgb(69, 113, 255);
+    border-radius: 20px;
+    padding: 1.5rem 1.2rem;
+    color: #ffffff;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-items: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 0.4rem;
+    width: 180px;
 }
 
-a{
-    text-decoration: none;
+.card-integrante img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin-bottom: 0.4rem;
+}
+
+.card-integrante strong {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.rm {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.links-integrante {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+}
+
+.links-integrante a {
+    background-color: #ffffff;
     color: rgb(69, 113, 255);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    transition: opacity 0.2s;
 }
 
-@media(max-width: 500px) {
+.links-integrante a:hover {
+    opacity: 0.8;
+}
 
-    h1 {
-        font-size: 3rem;
+/* ── Responsivo ── */
+@media (max-width: 500px) {
+    .card-integrante {
+        width: 140px;
+        padding: 1.2rem 0.8rem;
     }
 
-    ul {
-        flex-direction: column;
+    .card-integrante img {
+        width: 80px;
+        height: 80px;
     }
-}
-
-.Jardim{
-    align: center;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.Pivatti{
-    align: center;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.Luiz{
-    align: center;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.Kaua{
-    align: center;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.Guilherme{
-    align: center;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
 }

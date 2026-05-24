@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Contato.css">
+    <script src="https://kit.fontawesome.com/6a8e84955a.js" crossorigin="anonymous"></script>
     <title>Pass Up</title>
 </head>
 <body>
@@ -19,19 +20,49 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <ul>
-        <h2>
-            <ul class="CONTATO">Lista de Contato: </ul>
-            <ul class="email">E-mail: <a href="sac@soulup.io">sac@soulup.io</a> </ul>
-            <ul class="instagram">Instagram: <a href="https://www.instagram.com/soulupoficial/">Instagram</a></ul>
-            <ul class="Facebook">Facebook: <a href="https://www.facebook.com/soulprimeoficial/">Facebook</a></ul>
-            <ul class="Linkedin">Linkedin: <a href="https://www.linkedin.com/company/soulprimeio">Linkedin</a></ul>
-        </h2>
+        <!-- Lista de contato -->
+        <ul class="lista-contato">
+            <li class="CONTATO">Lista de Contato:</li>
+            <li class="email">
+                <i class="fa-solid fa-at"></i>
+                E-mail: <a href="mailto:sac@soulup.io">sac@soulup.io</a>
+            </li>
+            <li class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/soulupoficial/">Instagram</a>
+            </li>
+            <li class="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <a href="https://www.facebook.com/soulprimeoficial/">Facebook</a>
+            </li>
+            <li class="Linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/company/soulprimeio">LinkedIn</a>
+            </li>
         </ul>
+
+        <!-- Formulário de contato -->
+        <h2 class="CONTATO">Formulário de Contato:</h2>
+        <form class="formulario-texto">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </main>
+
     <footer>
         <p>&copy; 2026 Pass Up. Todos direitos reservados.</p>
     </footer>
+
+    <script src="../JavaScript/Contato.js"></script>
 </body>
 </html>
