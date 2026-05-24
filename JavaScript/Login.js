@@ -24,7 +24,7 @@ btnLogar.addEventListener('click', function () {
 
   mostrarBoasVindas(usuario.nome, usuario.pontos);
 
-  setTimeout(() => { window.location.href = '../index.html'; }, 2500);
+  setTimeout(() => { window.location.href = '../Paginas/Saldo.html'; }, 2500);
 });
 
 function mostrarToast(texto, tipo) {
