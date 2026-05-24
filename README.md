@@ -13,6 +13,12 @@
   <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge"/>
 </p>
 
+<p align="center">
+  <a href="https://github.com/SEU-USUARIO/SEU-REPOSITORIO">
+    <img src="https://img.shields.io/badge/🔗 Repositório-GitHub-181717?style=for-the-badge&logo=github"/>
+  </a>
+</p>
+
 ---
 
 ## 📋 Índice
@@ -24,6 +30,7 @@
 - [Tecnologias](#-tecnologias)
 - [Como Executar](#-como-executar)
 - [Estrutura de Pastas](#-estrutura-de-pastas)
+- [Repositório](#-repositório)
 - [Equipe](#-equipe)
 
 ---
@@ -171,7 +178,7 @@ Não! O Pass Up não possui limite de pontos que o usuário possa ter ou retirar
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/pass-up.git
+git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
 
 # 2. Abra a pasta no VS Code
 
@@ -227,8 +234,20 @@ Front-End-Challenge/
     ├── screenshot-quemsomos.png
     ├── screenshot-resgate.png
     ├── screenshot-saldo.png
-    ├── screenshot-sobre.png
+    └── screenshot-sobre.png
 ```
+
+---
+
+## 🔗 Repositório
+
+> Acesse o código-fonte completo do projeto no GitHub:
+
+<p align="center">
+  <a href="https://github.com/SEU-USUARIO/SEU-REPOSITORIO">
+    <img src="https://img.shields.io/badge/Acessar%20Repositório-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</p>
 
 ---
 
